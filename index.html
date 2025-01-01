@@ -3,131 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Biraj Bogati - Portfolio</title>
+    <title>Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
             background-color: #f4f4f9;
             color: #333;
         }
         header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
+            background-color: #4F9373;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
+            font-size: 36px;
         }
         header p {
-            font-size: 1.1em;
+            margin: 5px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background: #575757;
         }
         section {
-            margin: 20px;
             padding: 20px;
-            background-color: white;
+        }
+        .about, .projects, .contact {
+            margin-bottom: 30px;
+        }
+        .projects .project {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        h2 {
-            color: #333;
+        .contact form input, .contact form textarea, .contact form button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
-        .skills ul, .projects ul, .experience ul, .education ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        .skills li, .projects li, .experience li, .education li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #333;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        .contact form button {
+            background-color: #4F9373;
+            color: #fff;
+            cursor: pointer;
         }
         footer {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Biraj Bogati</h1>
-    <p>Senior Web Backend Developer</p>
-    <p><a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a> | <a href="https://github.com/your-profile" target="_blank">GitHub</a> | <a href="mailto:your-email@example.com">Email</a></p>
-</header>
-
-<section>
-    <h2>About Me</h2>
-    <p>I am a Senior Web Backend Developer with expertise in building efficient, scalable, and high-performance systems. With extensive experience in designing and implementing flight search systems, I specialize in optimizing backend architecture and improving the user experience. I am passionate about writing clean, maintainable code and continuously improving my technical skills.</p>
-</section>
-
-<section class="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li><strong>Languages:</strong> Python, JavaScript, SQL</li>
-        <li><strong>Frameworks:</strong> Django, Flask, Node.js</li>
-        <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB</li>
-        <li><strong>APIs:</strong> RESTful APIs, GraphQL</li>
-        <li><strong>Tools:</strong> Docker, Kubernetes, Jenkins, AWS, Git</li>
-    </ul>
-</section>
-
-<section class="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <strong>Flight Search System</strong><br>
-            <p>Description: Developed a flight search system allowing users to search for single-trip, round-trip, and multi-city flights.</p>
-            <p>Technologies: Python, Django, PostgreSQL, RESTful APIs</p>
-            <p>Features: Single-trip and round-trip search functionality, Multi-city search (currently under development), Optimized database queries for fast search results.</p>
-        </li>
-        <li>
-            <strong>E-commerce Platform Backend</strong><br>
-            <p>Description: Built the backend for an e-commerce platform with product management, user authentication, and order processing.</p>
-            <p>Technologies: Node.js, Express, MongoDB, JWT for authentication</p>
-            <p>Features: Real-time product stock updates, Payment gateway integration, User role-based access control.</p>
-        </li>
-    </ul>
-</section>
-
-<section class="experience">
-    <h2>Experience</h2>
-    <ul>
-        <li>
-            <strong>Senior Web Backend Developer</strong><br>
-            <em>Company Name | Dates of Employment</em><br>
-            <p>Led the design and development of a flight search engine, focusing on optimizing query performance and scalability. Mentored junior developers and conducted code reviews to ensure best practices. Worked closely with frontend teams to ensure smooth integration of backend services.</p>
-        </li>
-        <li>
-            <strong>Web Backend Developer</strong><br>
-            <em>Company Name | Dates of Employment</em><br>
-            <p>Designed and developed RESTful APIs for an e-commerce platform. Implemented robust database structures and improved query performance, reducing response times by 30%.</p>
-        </li>
-    </ul>
-</section>
-
-<section class="education">
-    <h2>Education</h2>
-    <ul>
-        <li><strong>Bachelor of Science in Computer Science</strong><br><em>University Name | Graduation Year</em></li>
-    </ul>
-</section>
-
-<footer>
-    <p>&copy; 2024 Biraj Bogati. All Rights Reserved.</p>
-</footer>
-
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Biraj Bogati, a web developer and designer.</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am passionate about creating clean and functional web designs. My goal is to help businesses build a strong online presence.</p>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Portfolio Website</h3>
+            <p>A responsive portfolio website showcasing my skills and projects.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: E-commerce Website</h3>
+            <p>An online store built with modern design and functionality.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/myyqwwjb" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Biraj Bogati. All rights reserved.</p>
+        <p>
+            <a href="https://www.linkedin.com/in/birajbogati">LinkedIn</a> | 
+            <a href="https://github.com/Birajbgt">GitHub</a>
+        </p>
+    </footer>
 </body>
 </html>
+
